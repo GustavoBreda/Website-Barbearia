@@ -125,4 +125,8 @@
                         width: 80%;
                         height: auto;
                      }
+    
+    .enviar {
+              width: 100%;
+            }
 }
