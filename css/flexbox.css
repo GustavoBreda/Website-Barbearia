@@ -1,8 +1,8 @@
 .header {
-            display: flex;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: space-between;
+          display: flex;
+          margin: 0 auto;
+          align-items: center;
+          justify-content: space-between;
         }
 
 .navegacao {
@@ -26,6 +26,16 @@
                 margin: 50px auto 0 auto;
              }
 
+.main.produtos {
+                  display: flex;
+                  gap: 20px;
+                  width: 80%;
+                  padding: 5% 4%;
+                  margin: 0 auto;
+                  border-radius: 10px;
+                  justify-content: space-around;
+                }
+
 /*parte mobile*/
 @media(max-width: 768px) {
     
@@ -37,7 +47,7 @@
            }
         
     #main {
-            width: 90%;
+            width: 70%;
           }
 
     
@@ -93,4 +103,26 @@
                           margin-bottom: 0;
                           margin-left: 0;
                         }
+    
+    .main.produtos {
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     margin: 0 auto;
+                   }
+
+    .main.produtos h2 {
+                        font-size: 1.5em;
+                        margin-bottom: 20px;
+                      }
+      
+    .main.produtos.descricao {
+                              font-size: 1.2em;
+                              margin-bottom: 20px;
+                             }
+      
+    .emblema.produto {  
+                        width: 80%;
+                        height: auto;
+                     }
 }

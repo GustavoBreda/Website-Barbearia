@@ -5,4 +5,3 @@
 /*usar função anonima*/
 /* id pra cada um e fzr ids dinamico com crase*/
 /* colocar tecla enter*/
-/* refazer todas as classes*/

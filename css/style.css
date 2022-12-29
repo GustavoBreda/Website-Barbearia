@@ -16,38 +16,38 @@ body {
                   width: 60%;
                 }
 
-.navegacao.lista.item {
-                        text-transform: uppercase;
-                        color: #000000;
-                        font-weight: bold;
-                        font-size: 22px;
-                        text-decoration: none;
-                      }
+.navegacao.lista {
+                   text-transform: uppercase;
+                   color: #000000;
+                   font-weight: bold;
+                   font-size: 22px;
+                   text-decoration: none;
+                 }
 
-.navegacao.lista.item:hover {
-                              color: #C78C19;
+.navegacao.lista:hover {
+                         color: #C78C19;
+                       }
+
+.navegacao.lista.home:hover {
+                              font-size: 22px;
+                              margin-right: 10px;
                             }
 
-#home:hover {
-             font-size: 22px;
-             margin-right: 10px;
-            }
+.navegacao.lista.produtos:hover {
+                                  font-size: 22px;
+                                  margin-right: 10px;
+                                  margin-left: 10px;
+                                }
 
-#produtos:hover {
-                 font-size: 22px;
-                 margin-right: 10px;
-                 margin-left: 10px;
-                }
-
-#contatos:hover {
-                 font-size: 22px;
-                 margin-left: 10px;
-                 margin-right: 10px;
-                }  
+.navegacao.lista.contato:hover {
+                                 font-size: 22px;
+                                 margin-left: 10px;
+                                 margin-right: 10px;
+                               }  
 
 #main {
-       width: 66%;
-       margin: 0 auto;
+        width: 66%;
+        margin: 0 auto;
       }
 
 .main.home.historia {
@@ -80,101 +80,6 @@ body {
                    font-size: 2em;
                    margin: 0 0 1em;
                  }
-
-.produtos {
-            width: 75%;
-            margin: 0 auto;
-            padding: 50px 0;
-          }
-
-.produtos li {
-              display: inline-block;
-              text-align: center;
-              width: 30%;
-              vertical-align: top;
-              margin: 0 1.5%;
-              box-sizing: border-box;
-              padding: 30px 20px;
-              border: 2px solid #000000;
-              border-radius: 10px;
-             }
-
-.produtos li:hover {
-                    border-color: #C78C19
-                   }
-
-.produtos li:hover h2 {
-                       font-size: 30px;
-                      }
-
-.produtos li:active {
-                     border-color: #088C19
-                    }
-
-.produtos h2 {
-              font-size: 25px;
-              font-weight: bold;
-             }
-
-.produto_descricao {
-                    font-size: 15px;
-                    }
-
-.produto_preco {
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 20px;
-               }
-
-#footer {
-         padding: 10px 0;
-         text-align: center;
-         padding: 10px 0;
-         background-image: url("file:///C:/Users/Cl%C3%B3vis/Documents/Gustavo/Road/JS/FE/Barbearia%20Alura/images//bg.jpg");
-        }
-
-#copyright {
-            margin: 10px;
-            color: white;
-           }
-
-form {
-      margin: 40px 0;
-     }
-
-form label, form legend {
-                         display: block;
-                         font-size: 20px;
-                         margin: 0 0 20px;
-                        }
-
-.input-padrao {
-                display: block;
-                margin: 0 0 20px;
-                padding: 10px 25px;
-                width: 50%
-              }
-
-.checkbox {
-           margin: 20px 0;
-          }
-
-.enviar {
-          width: 50%;
-          padding: 20px;
-          background: orange;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          border: none;
-          border-radius: 6px;
-          transition: 0.5s all;
-        }
-
-.enviar:hover {
-                background: darkorange;
-                transform: scale(1.05);
-              }
 
 .main.home.secundarios {
                         display: grid;
@@ -245,3 +150,106 @@ td, th {
 .secao_diferenciais_lista.item_atendimento {
                                              padding-top: 10px;
                                            }
+
+.secao_diferenciais_lista.item_localizacao {
+                                            margin-bottom: 30px;
+                                          }
+  
+#footer { 
+          text-align: center;
+          padding: 10px 0;
+          background-image: url("file:///C:/Users/Cl%C3%B3vis/Documents/Gustavo/Road/JS/FE/Barbearia%20Alura/images//bg.jpg");
+        }
+  
+.emblema.footer {
+                  width: 7%;   
+                }
+
+#copyright {
+            margin: 10px;
+            color: white;
+           }
+                                  
+
+.main.produtos li {
+                    border: 2px solid #000000;
+                    text-align: center;
+                    border-radius: 10px;
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 50px 10px;
+                  }
+
+.main.produtos h2 {
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                  }
+
+.main.produtos.descricao {
+                          text-align: center;
+                          font-size: 0.9em;
+                         }
+
+.main.produtos.preco {  
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-top: 20px;
+                     }
+
+.emblema.produto {
+                  width: 100%;
+                   margin: 0 auto;
+                 }
+
+.main.produtos li:hover {
+                          border-color: #C78C19
+                        }
+
+.main.produtos li:hover h2 {
+                             font-size: 30px;
+                           }
+
+.main.produtos li:active {
+                           border-color: #088C19
+                         }
+
+form {
+       margin: 40px 0;
+     }
+
+form label, form legend {
+                          display: block;
+                          font-size: 20px;
+                          margin: 0 0 20px;
+                        }
+
+.input-padrao {
+                display: block;
+                margin: 0 0 20px;
+                padding: 10px 25px;
+                width: 50%
+              }
+
+.checkbox {
+            margin: 20px 0;
+          }
+
+.enviar {
+          width: 50%;
+          padding: 20px;
+          background: orange;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          border: none;
+          border-radius: 6px;
+          transition: 0.5s all;
+        }
+
+.enviar:hover {
+                background: darkorange;
+                transform: scale(1.05);
+              }
