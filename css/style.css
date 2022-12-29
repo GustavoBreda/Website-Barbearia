@@ -30,19 +30,22 @@ body {
 
 .navegacao.lista.home:hover {
                               font-size: 22px;
-                              margin-right: 10px;
+                              margin-right: 6px;
+                              transition: 1s;
                             }
 
 .navegacao.lista.produtos:hover {
                                   font-size: 22px;
-                                  margin-right: 10px;
-                                  margin-left: 10px;
+                                  margin-right: 6px;
+                                  margin-left: 6px;
+                                  transition: 1s;
                                 }
 
 .navegacao.lista.contato:hover {
                                  font-size: 22px;
-                                 margin-left: 10px;
-                                 margin-right: 10px;
+                                 margin-left: 6px;
+                                 margin-right: 6px;
+                                 transition: 1s;
                                }  
 
 #main {
