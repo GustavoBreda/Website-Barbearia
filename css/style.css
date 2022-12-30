@@ -1,11 +1,24 @@
+@import url(flexbox.css);
+
+:root {
+       --cor-verde: #088C19;
+       --cor-preta: #000000;
+       --cor-amarela: #C78C19;
+       --cor-laranja: orange;
+       --cor-laranja-escura: darkorange;
+       --fonte-principal: 'Chakra Petch', sans-serif;
+       --cor-de-fundo-header: linear-gradient(to right, #d5d7e5, #eee, #d5d7e5);
+      }
+
+
 body {
-     font-family: 'Chakra Petch', sans-serif;
+       font-family: var(--fonte-principal);
+       font-size: 16px;
      }
      
 #header {
-         background: #B3CDD1;
-         padding: 20px 0;
-         background:linear-gradient(to right, #d5d7e5, #eee, #d5d7e5);
+          padding: 20px 0;
+          background: var(--cor-de-fundo-header);
         }
 
 .header {
@@ -18,34 +31,30 @@ body {
 
 .navegacao.lista {
                    text-transform: uppercase;
-                   color: #000000;
+                   color: var(--cor-preta);
+                   text-decoration: none;
                    font-weight: bold;
                    font-size: 22px;
-                   text-decoration: none;
                  }
 
 .navegacao.lista:hover {
-                         color: #C78C19;
+                         color: var(--cor-amarela);
+                         font-size: 22px;
+                         transition: 1s;
                        }
 
 .navegacao.lista.home:hover {
-                              font-size: 22px;
                               margin-right: 6px;
-                              transition: 1s;
                             }
 
 .navegacao.lista.produtos:hover {
-                                  font-size: 22px;
                                   margin-right: 6px;
                                   margin-left: 6px;
-                                  transition: 1s;
                                 }
 
 .navegacao.lista.contato:hover {
-                                 font-size: 22px;
                                  margin-left: 6px;
                                  margin-right: 6px;
-                                 transition: 1s;
                                }  
 
 #main {
@@ -59,7 +68,8 @@ body {
                      border-top: 1px solid #000000; 
                     }
 
-.emblema.tesoura {
+.emblema.tesoura {  
+                    margin: 0 20px 20px 0;
                     width: 150px;
                     float: left;
                     margin: 0 20px 20px 0;
@@ -70,7 +80,7 @@ body {
                       }
 
 .main.home.historia strong {
-                            font-weight: bold;
+                             font-weight: bold;
                            }
 
 .main.home.historia em {
@@ -88,12 +98,12 @@ body {
                         display: grid;
                         margin: 30px auto;
                         padding: 50px 0 10px 0;
+                        border-top: 1px solid var(--cor-preta); 
                         grid-template-columns: 40% 40% 20%;
-                        border-top: 1px solid #000000; 
                        }
 
 .titulo.secundario {
-                      border-bottom: 0.5px solid #000000;
+                      border-bottom: 0.5px solid var(--cor-preta);
                       text-transform: uppercase;
                       font-size: 1.2em;
                       text-align: left;
@@ -105,10 +115,10 @@ body {
                          }
 
 .titulo.secundario.ver_todos {  
+                               color: var(--cor-amarela);
                                border-bottom: none;
                                padding-top: 6px;
                                font-size: 0.8em;
-                               color: #C78C19;
                              }
 
 #secao_funcionamento {
@@ -125,20 +135,20 @@ table {
       }
                         
 thead {
-        background: black;
+        background: var(--cor-preta);
         color: white;
         font-weight: bold;
       }
                         
 td, th {
-         border: 1px solid black;
+         border: 1px solid var(--cor-preta);
          padding: 8px 15px;
        }
 
 #secao_cortes_feitos {
                        padding: 0 4%;
-                       border-right: 1px solid #000000; 
-                       border-left: 1px solid #000000; 
+                       border-right: 1px solid var(--cor-preta); 
+                       border-left: 1px solid var(--cor-preta); 
                      }
 
 #secao_diferenciais {
@@ -161,7 +171,7 @@ td, th {
 #footer { 
           text-align: center;
           padding: 10px 0;
-          background-image: url("file:///C:/Users/Cl%C3%B3vis/Documents/Gustavo/Road/JS/FE/Barbearia%20Alura/images//bg.jpg");
+          background-image: url("../images//bg.jpg");
         }
   
 .emblema.footer {
@@ -180,7 +190,7 @@ td, th {
                     border-radius: 10px;
                     width: 70%;
                     margin: 0 auto;
-                    padding: 50px 10px;
+                    padding: 30px 10px 10px;
                   }
 
 .main.produtos h2 {
@@ -203,12 +213,12 @@ td, th {
                      }
 
 .emblema.produto {
-                  width: 100%;
+                   width: 100%;
                    margin: 0 auto;
                  }
 
 .main.produtos li:hover {
-                          border-color: #C78C19
+                          border-color: var(--cor-amarela)
                         }
 
 .main.produtos li:hover h2 {
@@ -216,7 +226,7 @@ td, th {
                            }
 
 .main.produtos li:active {
-                           border-color: #088C19
+                           border-color: var(--cor-verde);
                          }
 
 form {
@@ -242,17 +252,17 @@ form label, form legend {
 
 .enviar {
           width: 50%;
-          padding: 20px;
-          background: orange;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
           border: none;
+          padding: 20px;
           border-radius: 6px;
           transition: 0.5s all;
+          background: var (--cor-laranja);
+          font-weight: bold;
+          font-size: 18px;
+          color: white;
         }
 
 .enviar:hover {
-                background: darkorange;
+                background: var(--cor-laranja-escura);
                 transform: scale(1.05);
               }
